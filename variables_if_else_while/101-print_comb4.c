@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+/**
+*main - Entry point
+*
+*Return: Always 0 (Success)
+*/
+
+int main(void)
+
+{
+int i, j, h;
+for (i = 0; i <= 7; i++)
+{
+for (j = i + 1; j <= 8; j++)
+{
+for (h = j + 1; h <= 9; h++)
+
+{
+putchar(i + '0');
+putchar(j + '0');
+putchar(h + '0');
+if (i != 7 || j != 8 || h != 9)
+
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+putchar('\n');
+return (0);
+}
