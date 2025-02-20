@@ -28,9 +28,12 @@ _putchar(',');
 _putchar(' ');
 }
 
+if (table < 10 && j != 0)
+_putchar(' ');
+
+
 if (table < 10)
 {
-_putchar(' ');
 _putchar(table + '0');
 }
 
