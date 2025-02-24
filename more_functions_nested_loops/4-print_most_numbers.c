@@ -2,8 +2,10 @@
 
 
 /**
-* print_numbers - Prints numbers from 0 to 9 except 2 and 4
+* print_most_numbers - Prints numbers from 0 to 9 except 2 and 4.
 *
+* Description: This function prints digits from 0 to 9,
+* except for the numbers 2 and 4, followed by a new line.
 */
 
 void print_most_numbers(void)
