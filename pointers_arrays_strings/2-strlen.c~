@@ -1,0 +1,18 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * string_length - Returns the length of a string
+ * @str: Pointer to the string (character array)
+ *
+ */
+
+int _strlen(char *s)
+{
+  int length;
+
+  for (length = 0; s[length] != '\0'; length++)
+    {
+    }
+    return (length);
+    }
