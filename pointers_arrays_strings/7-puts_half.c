@@ -14,12 +14,12 @@ int lenght, start, i;
 
 
 for (lenght = 0; str[lenght] != '\0'; lenght++)
-
+{
 if (lenght % 2 == 0)
 start = lenght / 2;
 else
 start = (lenght + 1) / 2;
-
+}
 
 for (i = start; str[i] != '\0'; i++)
 _putchar(str[i]);
