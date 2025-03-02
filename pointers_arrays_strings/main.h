@@ -1,6 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+unsigned int _strspn(char *s, char *accept);
+
+
 char *_strchr(char *s, char c);
 
 

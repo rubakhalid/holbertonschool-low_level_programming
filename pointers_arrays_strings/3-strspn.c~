@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * _strspn - Returns the length of the prefix substring with only bytes accept
+ * @s: String to check
+ * @accept: Acceptable characters
+ *
+ * Return: Number of matching bytes in the prefix of s
+ */
+
+
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int count = 0;
+char *a;
+
+for (; *s; s++)
+{
+for (a = accept; *a; a++)
+{
+if (*s == *a)
+{
+count++;
+break;
+}
+}
+if (*a == '\0')
+{
+break;
+}
+}
+ return (count);
+}
