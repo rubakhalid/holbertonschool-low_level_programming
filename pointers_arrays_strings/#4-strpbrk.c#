@@ -1,0 +1,102 @@
+#include "main.h"
+#include <stddef.h>
+
+
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+
+
+
+char *_strpbrk(char *s, char *accept)
+{
+while (*s)
+{
+char *a = accept;
+
+while (*a)
+{
+if (*s == *a)
+{	   trpbrk - Finds the first occurrence of any byte from accept in s
+    * @s: The string to search in
+    * @accept: The characters to look for
+    * Return: Pointer to the first match or NULL if no match is found
+							  */
+							 ~/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+/**
+ * _strpbrk - Finds the first occurrence of any byte from accept in s
+ * @s: The string to search in
+ * @accept: The characters to look for
+ * Return: Pointer to the first match or NULL if no match is found
+ */
+
+return (s);
+}
+a++;
+}
+s++;
+}
+return (NULL);
+}
