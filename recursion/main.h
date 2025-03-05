@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int check_prime_recursive(int n, int div);
 int _sqrt_recursion(int n);
 
 int is_prime_number(int n);
