@@ -1,5 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
+int helper(char *s, int start, int end);
+
+int is_palindrome(char *s);
 
 int check_prime_recursive(int n, int div);
 int _sqrt_recursion(int n);
