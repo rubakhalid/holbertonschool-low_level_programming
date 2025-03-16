@@ -1,0 +1,16 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* print_name - Calls a function to print a name in a specific format
+* @name: The name to be printed
+* @f: A pointer to a function that takes a string and prints it
+*
+* Description: This function receives a name and a function pointer.
+* It calls the function pointer to print the name in a specific way.
+*/
+void print_name(char *name, void (*f)(char *))
+{
+if (name && f)
+f(name);
+}
