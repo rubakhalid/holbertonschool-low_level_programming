@@ -4,12 +4,12 @@
 
 
 /**
- * add_node - Adds a new node at the beginning of a list_t list
- * @head: Double pointer to the head of the linked list
- * @str: String to be duplicated and stored in the new node
- *
- * Return: The address of the new element, or NULL if it failed
- */
+* add_node - Adds a new node at the beginning of a list_t list
+* @head: Double pointer to the head of the linked list
+* @str: String to be duplicated and stored in the new node
+*
+* Return: The address of the new element, or NULL if it failed
+*/
 
 list_t *add_node(list_t **head, const char *str)
 {
@@ -21,13 +21,7 @@ if (new == NULL)
 return (NULL);
 
 new->str = strdup(str);
-if (new->str == NULL)
-{
-free(new);
-return (NULL);
-}
-
-while (str[len] != '\0')
+while (str[len])
 len++;
 
 new->len = len;
@@ -36,4 +30,3 @@ new->next = *head;
 
 return (new);
 }
-
