@@ -9,7 +9,7 @@
  * @ac: Argument count
  * @av: Argument vector
  *
- * Return: 0 on success, exits with error code otherwise
+ * Return: 0 on success, exits with specific error codes otherwise
  */
 int main(int ac, char **av)
 {
