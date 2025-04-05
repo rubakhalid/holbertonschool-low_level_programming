@@ -26,7 +26,8 @@ if (written == -1)
 close(fd);
 return (-1);
 }
-if (write(fd, "\n", 1) == -1)
+written = write(fd, "\n", 1);
+if (written == -1)
 {
 close(fd);
 return (-1);
