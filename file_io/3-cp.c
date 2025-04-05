@@ -5,13 +5,11 @@
 
 #define BUFFER_SIZE 1024
 
-
 /**
  * open_source_file - Opens the source file for reading
  * @filename: name of the file to read from
  * Return: file descriptor on success, exits with 98 on failure
  */
-
 int open_source_file(char *filename)
 {
 int fd = open(filename, O_RDONLY);
@@ -23,13 +21,11 @@ exit(98);
 return (fd);
 }
 
-
 /**
  * open_target_file - Opens or creates the target file for writing
  * @filename: name of the file to write to
  * Return: file descriptor on success, exits with 99 on failure
  */
-
 int open_target_file(char *filename)
 {
 int fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -41,13 +37,10 @@ exit(99);
 return (fd);
 }
 
-
 /**
  * close_file - Closes an open file descriptor
  * @fd: file descriptor to close
- * Return: void, exits with 100 on failure
  */
-
 void close_file(int fd)
 {
 if (close(fd) == -1)
@@ -74,8 +67,15 @@ exit(97);
 }
 fd_from = open_source_file(av[1]);
 fd_to = open_target_file(av[2]);
-while ((r = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+while ((r = read(fd_from, buffer, BUFFER_SIZE)) != 0)
 {
+if (r == -1)
+{
+dprintf(2, "Error: Can't read from file %s\n", av[1]);
+close_file(fd_from);
+close_file(fd_to);
+exit(98);
+}
 w = write(fd_to, buffer, r);
 if (w == -1)
 {
@@ -84,13 +84,6 @@ close_file(fd_from);
 close_file(fd_to);
 exit(99);
 }
-}
-if (r == -1)
-{
-dprintf(2, "Error: Can't read from file %s\n", av[1]);
-close_file(fd_from);
-close_file(fd_to);
-exit(98);
 }
 close_file(fd_from);
 close_file(fd_to);
