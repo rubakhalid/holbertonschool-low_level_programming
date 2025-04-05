@@ -26,12 +26,6 @@ if (written == -1)
 close(fd);
 return (-1);
 }
-written = write(fd, "\n", 1);
-if (written == -1)
-{
-close(fd);
-return (-1);
-}
 }
 close(fd);
 return (1);
